@@ -1,0 +1,9 @@
+<h1>Удалить автомобиль?</h1>
+<p>Марка: {{ car.marka }}</p>
+<p>Модель: {{ car.model }}</p>
+<p>Гос номер: {{ car.gos_number }}</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Да, удалить</button>
+</form>
+<a href="{% url 'car_list' %}">Нет, отмена</a>

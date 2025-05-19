@@ -1,0 +1,65 @@
+/* Основные цвета */
+.swagger-ui .topbar {
+    background-color: #2c3e50 !important;
+    padding: 15px 0;
+}
+
+.swagger-ui .info h2 {
+    color: #3498db !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Кнопки */
+.swagger-ui .btn {
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+.swagger-ui .btn.execute {
+    background-color: #3498db !important;
+    border-color: #3498db !important;
+}
+
+/* Панели */
+.swagger-ui .opblock {
+    border-radius: 8px !important;
+    margin-bottom: 15px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+.swagger-ui .opblock .opblock-summary {
+    padding: 12px !important;
+}
+
+/* Текст */
+.swagger-ui .opblock .opblock-summary-path {
+    font-family: 'Consolas', monospace !important;
+    font-size: 14px !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .swagger-ui .wrapper {
+        padding: 10px !important;
+    }
+    
+    .swagger-ui .opblock .opblock-summary {
+        flex-direction: column !important;
+    }
+}
+
+/* Темная тема для Swagger */
+.swagger-ui.dark-theme {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.swagger-ui.dark-theme .opblock {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+.swagger-ui.dark-theme .opblock .opblock-summary {
+    background-color: #333 !important;
+    color: #fff !important;
+}
